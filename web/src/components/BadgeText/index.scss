@@ -1,0 +1,15 @@
+@import "../../styles/color";
+
+.badge-text {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-color;
+  border-radius: 50%;
+  
+  .badge-text__value {
+    color: white;
+  }
+}
