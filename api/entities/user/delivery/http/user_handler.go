@@ -25,7 +25,7 @@ func NewUserHandler(e *echo.Echo, uu user.Usecase) {
 	}
 	e.POST("/login", handler.Login)
 
-	e.GET("/users", handler.Fetch, middlewares.UserIsAdmin)
+	e.GET("/users", handler.Fetch)
 	e.GET("/users/:userId", handler.FetchByID)
 
 	e.POST("/users", handler.Store, middlewares.UserIsAdmin)
